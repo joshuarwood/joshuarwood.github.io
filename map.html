@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+
+</head>
+<body>
+
+<h1>Huntsville Safe Bike Routes</h1>
+<p>List of safe bike routes to various destinations in Huntsville. Click a route for more information</p>
+<div id="map" style="width:100%;height:600px"></div>
+
+<script>
+
+  //import leaflet from 'leaflet';
+
+  const map = L.map('map').setView([34.7304, -86.5861], 14);
+  //const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  //  maxZoom: 19, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+  //L.tileLayer.provider(''
+  //const tiles = L.tileLayer.provider('OpenStreetMap.HOT').addTo(map);
+  //const tiles = L.tileLayer.provider('Stadia.AlidadeSmooth').addTo(map); requires login
+  //const tiles = L.tileLayer.provider('Thunderforest.Transport').addTo(map); requires login, but pricing is reasonable
+  //const tiles = L.tileLayer.provider('Jawg.Streets').addTo(map);
+  //const tiles = L.tileLayer.provider('Esri.WorldTopoMap').addTo(map); // good
+  //const tiles = L.tileLayer.provider('Esri.WorldStreetMap').addTo(map); // good
+  const tiles = L.tileLayer.provider('CartoDB.Positron').addTo(map);
+
+</script>
+
+
+</body>
+</html>
