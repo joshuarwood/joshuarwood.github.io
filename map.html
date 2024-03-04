@@ -17,8 +17,11 @@
 <script src="routes/downtownToAAM.js"></script>
 <script src="routes/downtownToUAH.js"></script>
 <script src="routes/downtownToUAHHolmes.js"></script>
+<script src="routes/downtownToAldridge.js"></script>
 <script src="routes/aldridgeToDitto.js"></script>
 <script src="routes/indianCreek.js"></script>
+<script src="routes/UAHToMidCity.js"></script>
+<script src="routes/downtownToMonte.js"></script>
 
 <script>
 
@@ -46,6 +49,9 @@ var tiles = L.tileLayer.provider("CartoDB.Positron").addTo(map);
 addRoute(map, downtownToAAM_points, "Downtown to Alabama A&M", "null", "4.1 miles", "Commuter", "Intermediate", "251931588");
 addRoute(map, downtownToUAH_points, "Downtown to UAH", "Ky5e-FFI8xg", "5 miles", "Commuter", "Intermediate", "248790113");
 addRoute(map, downtownToUAHHolmes_points, "Downtown to UAH via Holmes", "null", "3 miles", "Commuter", "Expert", "251932099");
+addRoute(map, downtownToAldridge_points, "Downtown to Aldride Creek Greenway", "null", "8.6 miles", "Commuter / Recreation", "Intermediate", "251932435");
+addRoute(map, UAHToMidCity_points, "UAH to MidCity", "null", "2.3 miles", "Commuter", "Intermediate", "251932637");
+addRoute(map, downtownToMonte_points, "Downtown to Monte Sano State Park", "null", "5.6 miles", "Commuter / Recreation", "Intermediate", "251932902");
 
 // Greenways
 addRoute(map, indianCreek_points, "Indian Creek Greenway", "null", "2.0 miles", "Recreation", "Beginner", "251931914");
